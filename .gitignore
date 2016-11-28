@@ -34,3 +34,6 @@ Vagrantfile
 
 # Chef-Acceptance
 .acceptance_logs
+
+# leftovers from specs
+my-cookbook/
