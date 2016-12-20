@@ -34,6 +34,11 @@ else
   install_dir "#{default_root}/#{name}"
 end
 
+# Global FIPS override flag.
+if windows? || rhel?
+  override :fips, enabled: true
+end
+
 # Load dynamically updated overrides
 overrides_path = File.expand_path("../../../../omnibus_overrides.rb", __FILE__)
 instance_eval(IO.read(overrides_path), overrides_path)
