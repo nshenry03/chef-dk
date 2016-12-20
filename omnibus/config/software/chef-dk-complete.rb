@@ -33,4 +33,5 @@ dependency "shebang-cleanup"
 dependency "version-manifest"
 dependency "openssl-customization"
 
+fips_enabled = (project.overrides[:fips] && project.overrides[:fips][:enabled]) || false
 dependency "stunnel" if fips_enabled
