@@ -57,7 +57,6 @@ module ChefDK
       generator(:policyfile, :Policyfile, "Generate a Policyfile for use with the install/push commands")
       generator(:generator, :GeneratorGenerator, "Copy ChefDK's generator cookbook so you can customize it")
       generator(:'build-cookbook', :BuildCookbook, "Generate a build cookbook for use with Delivery")
-      generator(:'build-cookbook', :BuildCookbook, "Generate a build cookbook for use with Delivery")
       generator(:terraform, :Terraform, "Generate a single terraform")
 
       def self.banner_headline
