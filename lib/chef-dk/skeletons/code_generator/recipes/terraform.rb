@@ -14,4 +14,3 @@ template "#{terraform_dir}/README.md" do
     source "README_terraform.md.erb"
   action :create_if_missing
 end
-

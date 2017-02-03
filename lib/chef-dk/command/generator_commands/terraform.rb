@@ -30,6 +30,10 @@ module ChefDK
 
         options.merge!(SharedGeneratorOptions.options)
 
+        def recipe
+          'terraform'
+        end
+
         def initialize(params)
           @params_valid = true
           @terraform_name = nil
