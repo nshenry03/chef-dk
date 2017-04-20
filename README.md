@@ -95,6 +95,7 @@ populate the template.
 cookbook. Supports the `-s SOURCE` option similar to template.
 * `chef generate lwrp` Creates a new LWRP resource and provider in an
 existing cookbook.
+* `chef generate terraform` Creates a single terraform.
 
 The `chef generate` command also accepts additional `--generator-arg key=value`
 pairs that can be used to supply ad-hoc data to a generator cookbook.
